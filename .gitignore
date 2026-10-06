@@ -1,0 +1,36 @@
+# Java / Maven
+*.class
+*.jar
+*.war
+*.ear
+*.rar
+*.lnk
+*.log
+
+# Build outputs
+target/
+build/
+dist/
+*.iml
+
+# NetBeans
+nbproject/private/
+nbproject/configs/
+nbproject/build-impl.xml
+nbproject/genfiles.properties
+
+# IDE and local tooling
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+
+# Local environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Operating-system files
+.DS_Store
+Thumbs.db
