@@ -1,32 +1,34 @@
 # Transylvania Hotel Management System
 
-This project is a Java Swing-based hotel management system developed as an academic university project. It provides hotel administration screens for managing rooms, employees, customers, check-in and check-out activity, payments, and user authentication.
+This project is a Java Swing-based hotel management system developed as an academic university project by a **team of 6 students**. It provides hotel administration screens for managing rooms, employees, customers, check-in and check-out activity, payments, and user authentication.
 
 > This repository contains a public-safe, sanitized copy. The original project files remain available locally and were not modified or deleted.
 
 ## Technologies
 
-- Java 17+
-- Swing GUI toolkit
-- JDBC and MySQL
-- NetBeans GUI Designer forms
-- Maven
-- MySQL Connector/J
+* Java 17+
+* Swing GUI toolkit
+* JDBC and MySQL
+* NetBeans GUI Designer forms
+* Maven
+* MySQL Connector/J
 
 ## Main Features
 
-- Login with username and password
-- Add, view, and update hotel employees
-- Add and view hotel rooms
-- Manage customer information
-- Record customer check-in and check-out activity
-- Record payments
-- Display room and customer-related records
-- Use a MySQL database through JDBC
+* Login with username and password
+* Add, view, and update hotel employees
+* Add and view hotel rooms
+* Manage customer information
+* Record customer check-in and check-out activity
+* Record payments
+* Display room and customer-related records
+* Use a MySQL database through JDBC
 
 ## My Database Connection and Integration Contribution
 
-The database connection and integration are implemented in `DBconnection.java`. The class creates a MySQL JDBC connection and is used by the application forms for login, room management, employee management, customer management, check-in, check-out, and payment operations.
+This was a **team project of 6 members**, and my main contribution focused on **database connection and integration**.
+
+The database connection and integration are implemented in `DBconnection.java`. I implemented and integrated the MySQL JDBC connection and connected it with the application forms used for login, room management, employee management, customer management, check-in, check-out, and payment operations.
 
 The public version reads credentials from environment variables instead of storing them in source code. This makes the connection safe to reuse with a local or managed MySQL database while keeping the repository free of secrets.
 
@@ -65,11 +67,11 @@ The `.form` files are retained alongside their Java classes so the NetBeans GUI 
 
 ## Setup Requirements
 
-- Java 17 or newer
-- Maven
-- MySQL Server or MySQL-compatible database
-- MySQL Connector/J
-- NetBeans IDE 27 or later, optional for GUI Designer editing
+* Java 17 or newer
+* Maven
+* MySQL Server or MySQL-compatible database
+* MySQL Connector/J
+* NetBeans IDE 27 or later, optional for GUI Designer editing
 
 ## Configure the Database Connection
 
@@ -90,7 +92,7 @@ The application will not start database operations when the username or password
 
 ## Run the Project
 
-```powershell
+```bash
 mvn clean compile
 mvn exec:java -Dexec.mainClass=Login
 ```
@@ -105,4 +107,4 @@ To create sample data for personal development, use a separate local file that i
 
 ## Academic Project Notice
 
-This system was developed as an academic university project. It is intended for educational use and demonstration, and it should not be treated as a production-ready hotel management system without additional security, testing, validation, and deployment controls.
+This system was developed as an academic university project by a **team of 6 students**. It is intended for educational use and demonstration, and it should not be treated as a production-ready hotel management system without additional security, testing, validation, and deployment controls.
